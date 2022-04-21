@@ -3,17 +3,33 @@
         <meta charset="utf-8">
         <title>DOXA x Mullvad</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;700&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="main-container">
             <div class="header">
                 <div class="logos">
-                    <img src="./assets/logos/doxa.png">
-                    <img src="./assets/logos/mullvad.png">
+                    <img alt="DOXA logo" src="./assets/logos/doxa.png"/>
+                    <img alt="Mullvar logo" src="./assets/logos/mullvad.png"/>
                 </div>
             </div>
-            <div></div>
+            <div class="main">
+                <div class="offer-window">
+                    <img src="./assets/background_lock.png" id="lock"/>
+                    <div class="offer-text text">
+                        <div class="offer-title text--bold rotated-text-container">
+                            привет, это <a class="text--link" target="_blank" href="https://t.me/doxajournal">DOXA</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/ellipse_blue.png" id="ellips-blue"/>
+            <img src="./assets/ellipse_red.png" id="ellips-red"/>
+            <img src="./assets/ellipse_yellow.png" id="ellips-yellow"/>
             <footer class="footer"></footer>
+        
         </div>
     </body>
 </html>
@@ -28,14 +44,97 @@
     img {
         width: 82.26px;
         height: 82.26px;
+        margin: 0 28px;
     }
 
     .main-container {
-        margin: 166px 50px 170px ;
+        padding: 50px 170px;
     }
 
     .logos {
         display: flex;
         justify-content: center;
     }
+
+    .offer-window {
+        position: relative;
+        margin-top: 180px;
+        width: 100%;
+    }
+
+    .rotated-text-container {
+        background: rgba(1, 1, 1, 0.1);
+        border: 1.31191px solid #303030;
+        box-sizing: border-box;
+        backdrop-filter: blur(13.1191px);
+        border-radius: 38.0455px;
+        padding: 24px;
+        display: inline-block;
+        width: fit-content;
+    }
+
+    .offer-title {
+        position: absolute;
+        top: -62px;
+        left: 50%;
+        transform: translate(-50%, -58px) rotate(-6deg);
+    }
+
+    .text {
+        font-family: 'Jura';
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #fff;
+    }
+
+    .text--link {
+        text-decoration: underline;
+        color: #fff;
+    }
+
+    .text--regular {
+        font-weight: 400;
+    }
+
+    .text--bold {
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 71px;
+    }
+
+    #lock {
+        position: absolute;
+        height: 708px;
+        width: auto;
+        top: 63px;
+        right: 0;
+        opacity: 0.5;
+    }
+
+    #ellips-blue {
+        position: absolute;
+        height: 263px;
+        width: 263px;
+        top: 339px;
+        right: 96;
+    }
+
+    #ellips-red {
+        position: absolute;
+        height: 276px;
+        width: 276px;
+        left: 50px;
+        top: 639px;
+    }
+
+    #ellips-yellow {
+        position: absolute;
+        height: 198px;
+        width: 198px;
+        right: 53px;
+        top: 915px;
+    }
+
 </style>
