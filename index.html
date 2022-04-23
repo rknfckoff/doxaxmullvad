@@ -58,9 +58,6 @@
                         </div>
                     </div>
                 </div>
-                <img src="./assets/ellipse_blue.png" id="ellips-blue"/>
-                <img src="./assets/ellipse_red.png" id="ellips-red"/>
-                <img src="./assets/ellipse_yellow.png" id="ellips-yellow"/>
                 <footer class="footer">
                     <a target="_blank" href="https://t.me/doxajournal"><img alt="Telegram link" src="./assets/logos/telegram.png"/></a>
                     <a target="_blank" href="https://www.instagram.com/doxa_journal/"><img alt="Instagram link" src="./assets/logos/inst.png"/></a>
@@ -76,7 +73,7 @@
 </html>
 
 <style>
-    html, body {
+    html {
         width: 100vw;
         height: 100%;
         background-color: #121212;
@@ -89,6 +86,10 @@
 
     .text-container {
         padding: 50px 170px;
+        background-image: url(./assets/ellipse_blue.png), url(./assets/ellipse_red.png), url(./assets/ellipse_yellow.png);
+        background-position: 93% 339px, 50px 639px, 97% 915px;
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-size: 263px, 276px, 198px;
     }
 
     .logos {
@@ -138,7 +139,7 @@
         border-radius: 38.0455px;
         padding: 24px 35px;
         display: inline-block;
-        width: fit-content;
+        width: max-content;
         z-index: 2;
     }
 
@@ -206,33 +207,15 @@
         opacity: 0.5;
     }
 
-    #ellips-blue {
-        position: absolute;
-        height: 263px;
-        width: 263px;
-        top: 339px;
-        right: 96px;
-    }
-
-    #ellips-red {
-        position: absolute;
-        height: 276px;
-        width: 276px;
-        left: 50px;
-        top: 639px;
-    }
-
-    #ellips-yellow {
-        position: absolute;
-        height: 198px;
-        width: 198px;
-        right: 53px;
-        top: 915px;
-    }
-
     @media only screen and (max-width: 912px) {
         .text-container, .offer-text {
             padding: 50px 20px;
+        }
+
+        .text-container {
+            background-position: 110% 180px, -90px 500px, 120% 815px;
+            background-repeat: no-repeat, no-repeat, no-repeat;
+            background-size: 179px, 212px, 209px;
         }
 
         .text--regular {
@@ -277,29 +260,6 @@
             width: 27.32px;
             height: 27.32px;
             margin: 0 12px;
-        }
-
-        #ellips-blue {
-            position: absolute;
-            width: 179px;
-            height: 179px;
-            top: 180px;
-            right: -55px;
-        }
-
-        #ellips-red {
-            position: absolute;
-            width: 212px;
-            height: 212px;
-            left: -86px;
-            top: 500px;
-        }
-
-        #ellips-yellow {
-            width: 209px;
-            height: 209px;
-            left: 242px;
-            top: 815px;
         }
     }
 
