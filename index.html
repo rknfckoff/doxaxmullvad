@@ -1,266 +1,444 @@
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>DOXA x Mullvad</title>
-        <link rel="icon" type="image/x-icon" href="./favicon.ico">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;700&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div class="main-container">
-            <div class="text-container">
-                <div class="header">
-                    <div class="logos">
-                        <a target="_blank" href="http://doxajournal.ru"><img alt="DOXA logo" src="./assets/logos/doxa.png"/></a>
-                        <a target="_blank" href="https://mullvad.net/"><img alt="Mullvar logo" src="./assets/logos/mullvad.png"/></a>
-                    </div>
-                </div>
-                <div class="main">
-                    <div class="offer-window text">
-                        <img src="./assets/background_lock.png" id="lock"/>
-                        <div class="offer-text text--regular">
-                            <div class="offer-title text--bold rotated-text-container">
-                                привет, это <a class="text--link" target="_blank" href="https://t.me/doxajournal">DOXA</a>
-                            </div>
-                            <p>
-                                Несколько дней назад нам написали из <a class="text--link" target="_blank" href="https://mullvad.net/">Mullvad</a>. Это ребята* из Швеции, которые делают отличный VPN с максимальной заботой о приватности своих юзеров и открытым исходным кодом.
-                            </p>
-                            <p>
-                                Они сказали, что хотят пожертвовать 10.000 ключей к аккаунтам от своего сервиса россиян(к)ам, которым сейчас больше чем когда-либо необходим доступ к альтернативным источникам информации. Но как именно раздать эти ключи, не очень понимают. Мы предложили сделать Telegram-бота, который будет выдавать один ключ в одни руки.
-                            </p>
-                            <p>
-                                Нам было очень важно сделать это без каких-либо условий, которыми постоянно сопровождается что-то «бесплатное» в интернете. Мы не хотели всех этих «поставьте лайк», «подпишитесь на канал», а потом уже мы разыграем доступ. Сейчас, когда Россия ведет ужасающую войну, пытаясь уничтожить соседнюю страну, в самой России фактически введена военная цензура. Роскомнадзор и силовики истребляют все независимые медиа, рассказывающие об этой войне и преступлениях путинской армии. В этих условиях возможность обходить цензуру стала необходимостью. Поэтому каждый и каждая может получить доступ к качественному и бесплатному VPN, пока наши 10.000 ключей не закончатся.
-                            </p>
-                            <p>
-                                Из-за того, что количество аккаунтов ограничено, мы бы хотели попросить вас не запускать бот просто так, ради теста, или если у вас уже есть свой VPN, который вас всем устраивает. 
-                                Сохраните эту опцию для людей, у которых нет возможности оплачивать подписку из-за санкций или вообще нет на нее денег. 
-                                Mullvad VPN очень прост в использовании и установке, поэтому сохраните эту возможность и для тех, кому нелегко разобраться в том, как установить себе бесплатные, но чуть более технически сложные <a class="text--link" target="_blank" href="https://t.me/doxajournal/12594">сервисы</a>
-                            </p>
-                        </div>
-                        <div class="get-vpn-button text--bold rotated-text-container">
-                            <a class="text--link" target="_blank" href="https://t.me/DOXAxMullvad_bot/">получить VPN</a>
-                        </div>
-                    </div>
-                    <div class="info-text text text--regular">
-                        <p>
-                            Если вам интересно узнать про Mullvad VPN поподробнее, то можно почитать их <a class="text--link" target="_blank" href="https://mullvad.net/ru/help/no-logging-data-policy">политику</a> хранения пользовательских данных или посмотреть исходный <a class="text--link" target="_blank" href="https://github.com/mullvad/">код</a> приложений. Если у вас есть возможность заплатить за их сервис, вы всегда можете оформить подписку <a class="text--link" target="_blank" href="https://mullvad.net/ru/account/#/create/">здесь</a>.
-                        </p>
-                        <p>
-                            А еще вы можете поддержать DOXA, чтобы мы и дальше могли заниматься независимой журналистикой. Роскомнадзор заблокировал наш сайт, поэтому ссылка на нашу донатную страницу откроется только из-под VPN. Но вы уже знаете, что делать!
-                        </p>
-    
-                        <div class="support-us-container ">
-                            <div class="support-us-button text--bold rotated-text-container">
-                                <a class="text--link" target="_blank" href="https://doxajournal.ru/donate">поддержать нас</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <footer class="footer">
-                    <a target="_blank" href="https://t.me/doxajournal"><img alt="Telegram link" src="./assets/logos/telegram.png"/></a>
-                    <a target="_blank" href="https://www.instagram.com/doxa_journal/"><img alt="Instagram link" src="./assets/logos/inst.png"/></a>
-                    <a target="_blank" href="https://twitter.com/doxa_journal/"><img alt="Twitter link" src="./assets/logos/twitter.png"/></a>
-                    <a target="_blank" href="https://www.youtube.com/channel/UCI8XeBXcahsbsR2XA9gIWoQ"><img alt="Youtube link" src="./assets/logos/youtube.png"/></a>
-                    <a target="_blank" href="https://www.facebook.com/journaldoxa/"><img alt="Facebook link" src="./assets/logos/facebook.png"/></a>
-                    <a target="_blank" href="https://mullvad.net/"><img alt="Mullvad website link" src="./assets/logos/mullvad.png"/></a>
-                    
-                </footer>
-            </div>
+  <head>
+    <meta charset="utf-8" />
+    <title>DOXA x Mullvad</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jura:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="text-container">
+        <div class="header">
+          <div class="logos">
+            <a target="_blank" href="http://doxajournal.ru"
+              ><img
+                class="header-logo"
+                alt="DOXA logo"
+                src="./assets/logos/doxa.png"
+            /></a>
+            <a target="_blank" href="https://mullvad.net/"
+              ><img
+                class="header-logo"
+                alt="Mullvar logo"
+                src="./assets/logos/mullvad.png"
+            /></a>
+          </div>
         </div>
-    </body>
+        <div class="main">
+          <div class="offer-window text">
+            <img src="./assets/background_lock.png" id="lock" />
+            <div class="offer-text text--regular">
+              <div class="offer-title text--bold rotated-text-container">
+                привет, это
+                <a
+                  class="DOXA-text--link text--link"
+                  target="_blank"
+                  href="https://doxajournal.ru/"
+                  >DOXA</a
+                >
+              </div>
+              <p>
+                Несколько дней назад нам написали из
+                <a
+                  class="text--link"
+                  target="_blank"
+                  href="https://mullvad.net/"
+                  >Mullvad</a
+                >. Это ребята* из Швеции, которые делают отличный VPN с
+                максимальной заботой о приватности своих юзеров и открытым
+                исходным кодом.
+              </p>
+              <p>
+                Mullvad хотят пожертвовать 10 000 ключей к аккаунтам от своего
+                сервиса россиян(к)ам, которым сейчас больше чем когда-либо
+                необходим доступ к альтернативным источникам информации. Но как
+                именно раздать эти ключи, не очень понимают. Мы предложили
+                сделать Telegram-бота, который будет выдавать один ключ в одни
+                руки.
+              </p>
+              <p>
+                Нам было очень важно сделать это без каких-либо условий,
+                которыми постоянно сопровождается что-то «бесплатное»
+                в интернете. Мы не хотели всех этих «поставьте лайк»,
+                «подпишитесь на канал», а потом уже мы разыграем доступ. Сейчас,
+                когда Россия ведет ужасающую войну, пытаясь уничтожить соседнюю
+                страну, в самой России фактически введена военная цензура.
+                Роскомнадзор и силовики истребляют все независимые медиа,
+                рассказывающие об этой войне и преступлениях путинской армии. В
+                этих условиях возможность обходить цензуру стала необходимостью.
+                Поэтому каждый и каждая может получить доступ к качественному и
+                бесплатному VPN, пока наши 10 000 ключей не закончатся.
+              </p>
+              <p>
+                Количество аккаунтов ограничено, поэтому мы просим вас
+                не запускать бот просто так — особенно если у вас уже есть
+                качественный VPN. Mullvad прост в использовании и установке,
+                поэтому сохраните эту возможность для тех, у кого не получается
+                оплатить подписку, или кому технически сложно установить себе
+                бесплатные, но чуть более технически сложные
+                <a
+                  class="text--link"
+                  target="_blank"
+                  href="https://t.me/doxajournal/12594"
+                  >сервисы</a
+                >
+              </p>
+            </div>
+            <div class="get-vpn-button text--bold rotated-text-container">
+              <a
+                class="text--link"
+                target="_blank"
+                href="https://t.me/DOXAxMullvad_bot/"
+                >получить VPN</a
+              >
+            </div>
+          </div>
+          <div class="info-text text text--regular">
+            <p>
+              Если вам интересно узнать про Mullvad VPN поподробнее, то можно
+              почитать их
+              <a
+                class="text--link"
+                target="_blank"
+                href="https://mullvad.net/ru/help/no-logging-data-policy"
+                >политику</a
+              >
+              хранения пользовательских данных или посмотреть исходный
+              <a
+                class="text--link"
+                target="_blank"
+                href="https://github.com/mullvad/"
+                >код</a
+              >
+              приложений. Если у вас есть возможность заплатить за их сервис, вы
+              всегда можете оформить подписку
+              <a
+                class="text--link"
+                target="_blank"
+                href="https://mullvad.net/ru/account/#/create/"
+                >здесь</a
+              >.
+            </p>
+            <p>
+              А еще вы можете поддержать DOXA, чтобы мы и дальше могли
+              заниматься независимой журналистикой. Роскомнадзор заблокировал
+              наш сайт, поэтому ссылка на нашу донатную страницу откроется
+              только из-под VPN. Но вы уже знаете, что делать!
+            </p>
+
+            <div class="support-us-container">
+              <div class="support-us-button text--bold rotated-text-container">
+                <a
+                  class="text--link"
+                  target="_blank"
+                  href="https://doxajournal.ru/donate"
+                  >поддержать нас</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="footer">
+          <a target="_blank" href="https://t.me/doxajournal"
+            ><img
+              class="footer-logo"
+              alt="Telegram link"
+              src="./assets/logos/telegram.png"
+          /></a>
+          <a target="_blank" href="https://www.instagram.com/doxa_journal/"
+            ><img
+              class="footer-logo"
+              alt="Instagram link"
+              src="./assets/logos/inst.png"
+          /></a>
+          <a target="_blank" href="https://twitter.com/doxa_journal/"
+            ><img
+              class="footer-logo"
+              alt="Twitter link"
+              src="./assets/logos/twitter.png"
+          /></a>
+          <a
+            target="_blank"
+            href="https://www.youtube.com/channel/UCI8XeBXcahsbsR2XA9gIWoQ"
+            ><img
+              class="footer-logo"
+              alt="Youtube link"
+              src="./assets/logos/youtube.png"
+          /></a>
+          <a target="_blank" href="https://www.facebook.com/journaldoxa/"
+            ><img
+              class="footer-logo"
+              alt="Facebook link"
+              src="./assets/logos/facebook.png"
+          /></a>
+          <a target="_blank" href="https://mullvad.net/"
+            ><img
+              class="footer-logo"
+              alt="Mullvad website link"
+              src="./assets/logos/mullvad.png"
+          /></a>
+        </footer>
+      </div>
+    </div>
+  </body>
 </html>
 
 <style>
-    html {
-        width: 100vw;
-        height: 100%;
-        background-color: #121212;
-        margin: 0;
-    }
+  html {
+    width: 100vw;
+    height: 100%;
+    background-color: #121212;
+    margin: 0;
+  }
 
-    .main-container {
-        width: 100%;
+  .main-container {
+    width: 100%;
+  }
+
+  .text-container {
+    padding: 50px 170px;
+    background-image: url(./assets/ellipse_blue.png),
+      url(./assets/ellipse_red.png), url(./assets/ellipse_yellow.png);
+    background-position: 93% 339px, 50px 639px, 97% 915px;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 263px, 276px, 198px;
+  }
+
+  .logos {
+    display: flex;
+    justify-content: center;
+  }
+
+  .logos img {
+    width: 82.26px;
+    height: 82.26px;
+    margin: 0 28px;
+  }
+
+  .offer-window {
+    position: relative;
+    margin-top: 180px;
+    width: 100%;
+    background: linear-gradient(
+      63.07deg,
+      rgba(64, 64, 64, 0.8) 11.06%,
+      rgba(64, 64, 64, 0) 109.38%
+    );
+    border: 3px solid rgba(255, 255, 255, 0.05);
+    box-shadow: inset 0px 4px 50px rgba(255, 255, 255, 0.1);
+    filter: drop-shadow(1px 7px 16px rgba(0, 0, 0, 0.18));
+    backdrop-filter: blur(15px);
+    border-radius: 26px;
+    text-align: left;
+    z-index: 1;
+  }
+
+  .offer-text {
+    padding: 107px 220px 88px 112px;
+  }
+
+  .info-text {
+    position: relative;
+    margin: 120px 112px;
+  }
+
+  .rotated-text-container {
+    position: absolute;
+    left: 50%;
+    max-height: 115px;
+    transform: translate(-50%, 50%) rotate(-6deg);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10.2607px);
+    bottom: 0;
+    border: 1.31191px solid #303030;
+    box-sizing: border-box;
+    border-radius: 38.0455px;
+    padding: 24px 35px;
+    display: inline-block;
+    width: max-content;
+    z-index: 2;
+  }
+
+  .offer-title {
+    top: 0;
+    transform: translate(-50%, -50%) rotate(-6deg);
+    backdrop-filter: blur(13.1191px);
+    background: rgba(1, 1, 1, 0.1);
+  }
+
+  .get-vpn-button {
+    text-shadow: 0 0 4px #ffffff;
+    transition-property: opacity text-shadow;
+    transition: 0.5s ease;
+  }
+
+  .get-vpn-button:hover {
+    opacity: 0.75;
+    text-shadow: 0 0 4px #bb7cffd2;
+  }
+
+  .get-vpn-button:active {
+    outline: none;
+  }
+
+  .get-vpn-button:focus {
+    outline: none;
+  }
+
+  .support-us-container {
+    position: relative;
+    margin-top: 100px;
+    height: 100px;
+  }
+
+  .support-us-button {
+    transform: translate(-50%, 0) rotate(-6deg);
+    text-shadow: 0 0 6px #ffffff;
+    transition-property: opacity text-shadow;
+    transition: 0.5s ease;
+  }
+
+  .support-us-button:hover {
+    opacity: 0.7;
+    text-shadow: 0 0 8px #bb7cffd2;
+  }
+
+  .text {
+    font-family: 'Jura';
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+  }
+
+  .text--link {
+    text-decoration: underline 3px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    transition-property: opacity;
+    transition: 0.5s ease;
+  }
+
+  .text--link:hover {
+    opacity: 0.65;
+  }
+
+  .DOXA-text--link {
+    text-decoration: underline 6px !important;
+  }
+
+  .text--regular {
+    font-weight: 400;
+  }
+
+  .footer {
+    text-align: center;
+  }
+
+  .footer img {
+    width: 38.4px;
+    height: 38.4px;
+    margin: 0 17px;
+  }
+
+  .text--bold {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 71px;
+  }
+
+  .header-logo {
+    transition-property: opacity;
+    transition: 0.5s ease;
+  }
+
+  .header-logo:hover {
+    opacity: 0.7;
+  }
+
+  .footer-logo {
+    transition-property: opacity;
+    transition: 0.5s ease;
+  }
+
+  .footer-logo:hover {
+    opacity: 0.6;
+  }
+
+  #lock {
+    position: absolute;
+    height: 708px;
+    width: auto;
+    top: 100px;
+    right: 0;
+    opacity: 0.5;
+    z-index: -1;
+  }
+
+  @media only screen and (max-width: 912px) {
+    .text-container,
+    .offer-text {
+      padding: 50px 20px;
     }
 
     .text-container {
-        padding: 50px 170px;
-        background-image: url(./assets/ellipse_blue.png), url(./assets/ellipse_red.png), url(./assets/ellipse_yellow.png);
-        background-position: 93% 339px, 50px 639px, 97% 915px;
-        background-repeat: no-repeat, no-repeat, no-repeat;
-        background-size: 263px, 276px, 198px;
-    }
-
-    .logos {
-        display: flex;
-        justify-content: center;
-    }
-
-    .logos img {
-        width: 82.26px;
-        height: 82.26px;
-        margin: 0 28px;
-    }
-
-    .offer-window {
-        position: relative;
-        margin-top: 180px;
-        width: 100%;
-        background: linear-gradient(63.07deg, rgba(64, 64, 64, 0.8) 11.06%, rgba(64, 64, 64, 0) 109.38%);
-        border: 3px solid rgba(255, 255, 255, 0.05);
-        box-shadow: inset 0px 4px 50px rgba(255, 255, 255, 0.1);
-        filter: drop-shadow(1px 7px 16px rgba(0, 0, 0, 0.18));
-        backdrop-filter: blur(15px);
-        border-radius: 26px;
-        text-align: left;
-        z-index: 1;
-    }
-
-    .offer-text {
-        padding: 107px 220px 88px 112px;
-    }
-
-    .info-text {
-        position: relative;
-        margin: 120px 112px;
-    }
-
-    .rotated-text-container {
-        position: absolute;
-        left: 50%;
-        max-height: 115px;
-        transform: translate(-50%, 50%) rotate(-6deg);
-        background: rgba(255, 255, 255, 0.15);
-        backdrop-filter: blur(10.2607px);
-        bottom: 0;
-        border: 1.31191px solid #303030;
-        box-sizing: border-box;
-        border-radius: 38.0455px;
-        padding: 24px 35px;
-        display: inline-block;
-        width: max-content;
-        z-index: 2;
-    }
-
-    .offer-title {
-        top: 0;
-        transform: translate(-50%, -50%) rotate(-6deg);
-        backdrop-filter: blur(13.1191px);
-        background: rgba(1, 1, 1, 0.1);
-    }
-
-    .get-vpn-button {
-        
-    }
-
-    .support-us-container {
-        position: relative;
-        margin-top: 100px;
-        height: 100px;
-    }
-
-    .support-us-button {
-        transform: translate(-50%, 0) rotate(-6deg);
-    }
-
-    .text {
-        font-family: 'Jura';
-        font-size: 24px;
-        line-height: 28px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: #fff;
-    }
-
-    .text--link {
-        text-decoration: underline;
-        color: #fff;
+      background-position: 110% 180px, -90px 500px, 120% 815px;
+      background-repeat: no-repeat, no-repeat, no-repeat;
+      background-size: 179px, 212px, 209px;
     }
 
     .text--regular {
-        font-weight: 400;
-    }
-
-    .footer {
-        text-align: center;
-    }
-
-    .footer img {
-        width: 38.4px;
-        height: 38.4px;
-        margin: 0 17px;
+      font-size: 16px;
     }
 
     .text--bold {
-        font-weight: 700;
-        font-size: 60px;
-        line-height: 71px;
+      font-size: 27px;
+    }
+
+    .rotated-text-container {
+      padding: 12px 20px;
+      max-height: 52px;
+      line-height: 32px;
+      border-radius: 17px;
+    }
+
+    .offer-window {
+      margin-top: 64px;
+    }
+
+    .logos img {
+      width: 41px;
+      height: 41px;
+      margin: 0 28px;
     }
 
     #lock {
-        position: absolute;
-        height: 708px;
-        width: auto;
-        top: 100px;
-        right: 0;
-        opacity: 0.5;
+      height: 165px;
     }
 
-    @media only screen and (max-width: 912px) {
-        .text-container, .offer-text {
-            padding: 50px 20px;
-        }
-
-        .text-container {
-            background-position: 110% 180px, -90px 500px, 120% 815px;
-            background-repeat: no-repeat, no-repeat, no-repeat;
-            background-size: 179px, 212px, 209px;
-        }
-
-        .text--regular {
-            font-size: 16px;
-        }
-
-        .text--bold {
-            font-size: 27px;
-        }
-
-        .rotated-text-container {
-            padding: 12px 20px;
-            max-height: 52px;
-            line-height: 32px;
-            border-radius: 17px;
-        }
-
-        .offer-window {
-            margin-top: 64px;
-        }
-
-        .logos img {
-            width: 41px;
-            height: 41px;
-            margin: 0 28px;
-        }
-
-        #lock {
-            height: 165px;
-        }
-
-        .info-text {
-            margin: 60px 20px;
-        }
-
-        .support-us-container {
-            margin-top: 50px;
-            height: 50px;
-        }
-
-        .footer img {
-            width: 27.32px;
-            height: 27.32px;
-            margin: 0 12px;
-        }
+    .info-text {
+      margin: 60px 20px;
     }
 
+    .support-us-container {
+      margin-top: 50px;
+      height: 50px;
+    }
+
+    .footer img {
+      width: 27.32px;
+      height: 27.32px;
+      margin: 0 12px;
+    }
+  }
 </style>
